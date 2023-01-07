@@ -1,9 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .site-wrapper{
-    background: rgb(27, 27, 27);
+    position: relative;
+}
+.nav-bar-wrapper{
+    width: 100vw;
+    position: absolute;
+}
+.nav-bar{
+    padding: 2vw 3vw 2vw 3vw;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.logo-wrapper{
+    width: 20%;
+    
+}
+#rust-logo{
+    width: 12.2vw;
+}
+.nav-wrapper{
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    font-size: 1.4rem;
+}
+.nav-item{
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 30px;
+    font-weight: 300px;
+    padding: 0.5vw 0 0.5vw 0;
+    margin-left: 1.5vw;
+    color: #f2f2f2;
+    text-decoration: none;
+
+}
+.social-wrapper{
+    margin-left: 1vw;
+    width: 8%;
+    display: flex;
+    align-items: center;
+}
+.social-item{
+    margin-left: 1.5vw ;
+    width: 1.3vw;
+}
+/*fim do header*/
+
+main{
+    width: 100vw;
+}
+.section1{
+    height: 110vh;
+    width: 100vw;
+    background-image: url("/images/hasmat-backgground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.section2{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("/images/florest-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
