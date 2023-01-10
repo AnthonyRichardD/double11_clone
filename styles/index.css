@@ -41,6 +41,8 @@
     margin-left: 1.5vw;
     color: #f2f2f2;
     text-decoration: none;
+    cursor: pointer;
+
 
 }
 .social-wrapper{
@@ -58,18 +60,102 @@
 main{
     width: 100vw;
 }
-.section1{
+.section1-background{
     height: 110vh;
     width: 100vw;
-    background-image: url("/images/hasmat-backgground.png");
+    background-image: url("/images/hasmat-background2.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.section2{
-    height: 100vh;
+.background-opacity{
+    width: 100%;
+    height: 100%;
+    background: rgb(70, 69, 69);
+    opacity: 25%;
+    position: absolute;
+}
+
+#full-logo{
+    padding: 0 1.5vw 1.5vw 1.5vw;
+    width: 48vw;
+}
+.section1-content{
+    width: 100%;
+    margin-top: 15vh;
+    text-align: center;
+    padding: 20vh 5vw 25vh 5vw;
+
+}
+.section1-content > p{
+    word-wrap: break-word;
+    font-size: 1.6em;
+    color: #f2f2f2;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    padding: 1.8vw;
+}
+.btn-wrapper{
+    padding: 1.5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+.console-btn{
+    padding: 10% ;
+    min-width:21vw; 
+    height: 10vh;
+    background-repeat: no-repeat;
+    background-position: center;   
+}
+.console-btn:hover{
+    opacity: 80%;
+    transition: ease-in-out 0.2s;
+}
+
+.section2-background{
     width: 100vw;
     background-image: url("/images/florest-background.png");
     background-size: cover;
     background-repeat: no-repeat;
+}
+.img-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 13vh;
+}
+.section2-content{
+    padding: 10vh 5vw;
+    width: 100vw;
+    height: 100vh;
+}
+.section2-img-wrapper{
+    width: 30%;
+    padding: 0 1vw 0 1vw;
+}
+.section2-img{
+    width: 100%;
+}
+.rust-description-wrapper{
+    height: 90vh;
+    padding: 10vh 5vw;
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#desc-tittle{
+    color: #ce412c; 
+    font-size: 3.2em;
+    font-weight: 700;
+    margin-bottom: 4vh;
+    font-style: normal;
+    transform: scale(1.1);
+}
+.desc-p{
+    margin: 2vh 0 2vh 0;
+    color: #f2f2f2;
+    font-weight: 700;
+    font-size: 1.6em;
 }
