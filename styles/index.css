@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 .site-wrapper{
     position: relative;
 }
 .nav-bar-wrapper{
-    width: 100vw;
+    width: 100%;
     position: absolute;
 }
 .nav-bar{
@@ -34,16 +33,14 @@
     font-size: 1.4rem;
 }
 .nav-item{
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto Condensed';
     line-height: 30px;
-    font-weight: 300px;
     padding: 0.5vw 0 0.5vw 0;
     margin-left: 1.5vw;
     color: #f2f2f2;
     text-decoration: none;
     cursor: pointer;
-
-
+    font-weight: 300;
 }
 .social-wrapper{
     margin-left: 1vw;
@@ -58,22 +55,15 @@
 /*fim do header*/
 
 main{
-    width: 100vw;
+    width: 100%;
 }
 .section1-background{
     height: 110vh;
-    width: 100vw;
+    width: 100%;
     background-image: url("/images/hasmat-background2.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
-.background-opacity{
-    width: 100%;
-    height: 100%;
-    background: rgb(70, 69, 69);
-    opacity: 25%;
-    position: absolute;
 }
 
 #full-logo{
@@ -82,7 +72,6 @@ main{
 }
 .section1-content{
     width: 100%;
-    margin-top: 15vh;
     text-align: center;
     padding: 20vh 5vw 25vh 5vw;
 
@@ -90,8 +79,9 @@ main{
 .section1-content > p{
     word-wrap: break-word;
     font-size: 1.6em;
+    font-weight: 300;
     color: #f2f2f2;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto Condensed';
     text-align: center;
     padding: 1.8vw;
 }
@@ -115,10 +105,11 @@ main{
 }
 
 .section2-background{
-    width: 100vw;
+    width: 100%;
     background-image: url("/images/florest-background.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .img-wrapper{
     display: flex;
@@ -128,7 +119,7 @@ main{
 }
 .section2-content{
     padding: 10vh 5vw;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 .section2-img-wrapper{
@@ -143,7 +134,7 @@ main{
     padding: 10vh 5vw;
     width: 100%;
     text-align: center;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto Condensed';
 }
 #desc-tittle{
     color: #ce412c; 
@@ -159,3 +150,200 @@ main{
     font-weight: 700;
     font-size: 1.6em;
 }
+.section3-background{
+    width: 100%;
+    background-image: url("../images/Rust_Hazmat_DomeSilhouette.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+.section3 > .content-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section3 > .content-wrapper > .content{
+    width: 100%;
+    height: 100%;
+    padding: 6.6vw 3.3vw 6.6vw 3.3vw;
+    margin-right: 2.2vw;
+    margin-left: 2.2vw;
+}
+.trailer-tittle-wrapper{
+    width: 100%;
+    text-align: center;
+    padding: 1vw 25vw;
+}
+.trailer-tittle-wrapper > h1{
+    font-family: 'Roboto Condensed';
+    color: #ce412c;
+    font-size: 3.4em;
+}
+.video-content{
+    padding-top: 5.5vw;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.video-wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 25px;
+    width: 58%;
+}
+.video-desc-wrapper{
+    padding-top: 12vw;
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.trailer-desc-content{
+    padding-left: 8vw;
+}
+
+.trailer-desc-content > h1{
+    font-family: 'Roboto Condensed';
+    color: #ce412c;
+    font-size: 2em;
+    margin-bottom:2.5vw;
+}
+.trailer-desc-content > p{
+    margin-bottom: 2vw;
+    font-family: 'Roboto Condensed';
+    color: #f2f2f2;
+    text-align: start;
+    font-size: 1.4em;
+    font-weight: 300;
+}
+.video-social{
+    text-align: center;
+}
+.video-social > a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.s3-social{
+    max-width:1.6vw;
+    margin-left: 10px;
+}
+.last-news-background{
+    width: 100%;
+    background-image: url("/images/devblogbackground.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.last-news-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0 6.6vw 0 6.6vw; 
+}
+.news-tittle{
+    color: #f2f2f2;
+    text-align: center;
+    padding: 4vw;
+    margin-bottom: 2vw;
+    font-weight: 800;
+    font-size: 1.9em;
+    font-family: 'Roboto Condensed';
+}
+.read-more-wrapper{
+    position: relative;
+    width: 100%;
+    height: 35vw;
+}
+.building-group{
+    width: 63%;
+    height: 100%;
+    background-image: url("/images/RUST_GroupShot_Building.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.read-more{
+    white-space: nowrap;
+    width: 40%;
+    position: absolute;
+    right: 12%;
+    top: 10%;
+    padding: 5% 2% 5% 4%;
+    background: #f2f2f2;
+}
+.read-more > h1,p{
+    color: #1e2020;
+    font-family: 'Roboto Condensed';
+    margin-bottom: 5%;
+}
+.read-more > h1{
+    font-size: 2em;
+    margin-bottom: 1.2vw;
+}
+.read-more > p{
+    font-size: 1.4em;
+    font-weight: 300;
+
+}
+.readbtn-wrapper{
+    width: 100%;
+}
+.read-more-btn{
+    padding: 5%;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-align: center;
+    width: 40%;
+    color: #f2f2f2;
+    background: #ce412c;
+    font-family: 'Roboto Condensed';
+}
+.slider-btn-wrapper{
+    width: 100%;
+    color: #f2f2f2;
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider-btn{
+    font-size: 1.5em;
+    display: flex;
+    gap: 20px;
+}
+.arr-left-btn,.arr-right-btn{
+    cursor: pointer;
+}
+
+.slider-wrapper{
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+.slider{
+    width: 100%;
+    height: 80%;
+}
+.slides{
+    display: flex;
+    width: 400%;
+    height: 100%;
+}
+.slide{
+    display: flex;    
+    gap: 2%;
+    width: 25%;
+    height: 100%;
+    transition: 500ms;
+}
+.image{
+    width: 33%;
+    height: 100%;
+    background: #ce412c;
+}
+
+
+
+
