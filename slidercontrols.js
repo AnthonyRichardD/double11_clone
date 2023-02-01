@@ -1,10 +1,12 @@
 let count = 0
-slider = document.querySelector(".slide")
-
+let slider = document.querySelector(".slide")
+let arrLeft = document.querySelector(".arr-left-btn")
+let arrRight = document.querySelector(".arr-right-btn")
 function controleDoSlider(comando){
     if(comando === "proximo"){
         if(count <3){
             count++
+            
         }
     }
     else{
@@ -12,7 +14,17 @@ function controleDoSlider(comando){
             count--
         }
     }
-    console.log(count)
+    if(count == 0){
+        arrLeft.style.color = "gray"
+    }else{
+        arrLeft.style.color = "#f2f2f2"
+    }
+    
+    if(count == 3){
+        arrRight.style.color = "gray"
+    }else{
+        arrRight.style.color = "#f2f2f2"
+    }
     moveSlider()
 }
 function moveSlider(){
