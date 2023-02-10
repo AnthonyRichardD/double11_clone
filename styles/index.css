@@ -73,6 +73,7 @@ main{
 }
 
 #full-logo{
+    margin-top: 8%;
     padding: 0 1.5vw 1.5vw 1.5vw;
     width: 48vw;
 }
@@ -90,6 +91,7 @@ main{
     font-family: 'Roboto Condensed';
     text-align: center;
     padding: 1.8vw;
+    margin-bottom: 0;
 }
 .btn-wrapper{
     padding: 1.5%;
@@ -388,13 +390,12 @@ main{
 .form-section{
     width: 100%;
     height: 100%;
-    padding: 3vw;
+    padding: 0 6.6vw 0 6.6vw;
 }
 .form-wrapper{
     width: 100%;
     height: 100%;
     display: flex;
-    padding: 2%;
 }
 
 .newsletter-desc{
@@ -402,7 +403,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    align-items: flex-start;
 }
 
 .newsletter-desc > h1{
@@ -486,6 +487,7 @@ main{
     font-size: 1.4em;
     font-weight: 700;
 }
+/*Fim do form section*/
 
 .site-footer{
     position: relative;
@@ -506,9 +508,99 @@ main{
     height: 100%;
     background: #1e2020;
     position: absolute;
-    opacity: 0.7;
+    opacity: 0.8;
+}
+.footer-content-wrapper{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 3vw 6.6vw;
+    width: 100%;
+    height: 100%;
+}
+.footer-row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ESRB-wrapper{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+}
+.space{
+    width: 100%;
+    padding: 3%;
+}
+.ESRB-content,
+.cero-content{
+    padding: 1%;
+}
+.ESRB-content{
+    position: relative;
+}
+#ESRB-alert{
+    position: absolute;
+    top: 23%;
+    left:38%;
+    font-size: 1.5em;
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
+    color: black;
 }
 
+.cero-content > img{
+    width: 90%;
+}
+
+.footer-img{
+    width: 50%;
+    text-align: center;
+}
+.p-row{
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+    
+}
+.p-row > p {
+    font-size: 1.1em;
+    font-family: 'Roboto Condensed';
+    color: #f2f2f2;
+    margin: 0;
+}
+
+.p-row >  p > a{
+    color: #ce412c;
+    cursor: pointer;
+}
+.footer-social{
+    width: 100%;
+    padding: 1%;
+}
+.footer-nav-wrapper{
+    width: 100%;
+    text-align: center;
+}
+.footer-nav-wrapper > a > img{
+    cursor: pointer; 
+    width: 3%;
+}
+.copyright-wrapper{
+    width: 100%;
+    text-align: center;
+    padding: 1%;
+}
+.copyright-wrapper > p{
+    color: #f2f2f2;
+    height: 100%;
+    width: 100%;
+    font-weight: 300;
+    margin: 0;
+}
 
 
 
